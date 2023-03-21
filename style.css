@@ -1,0 +1,142 @@
+:root{
+
+    --ff--lexend:'Lexend Deca', sans-serif;
+    --ff--big:'Big Shoulders Display', cursive;
+    --bc-orange: hsl(31, 77%, 52%);
+    --bc-cyan: hsl(184, 100%, 22%);
+    --bc-dark-cyan: hsl(179, 100%, 13%);
+    --bc-gray:hsl(0, 0%, 95%);
+    --c-transparent-white: hsla(0, 0%, 100%, 0.75);
+
+
+}
+
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    background-color: var(--bc-gray);
+    
+    
+
+}
+
+
+.container{
+
+display: flex;
+flex-direction: column;
+border-radius: 1rem;
+overflow: hidden;
+max-width: 370px;
+
+
+}
+
+
+.section{
+
+    display: flex;
+    flex-direction: column;
+    padding:3.5rem;
+
+}
+
+.s1{
+    background-color: var(--bc-orange);
+}
+
+.s1 button{
+    color:var(--bc-orange)
+}
+
+
+
+.s2{
+    background-color: var(--bc-cyan);
+}
+
+.s2 button{
+    color: var(--bc-cyan);
+}
+
+
+
+.s3{
+    background-color: var(--bc-dark-cyan);
+}
+
+.s3 button{
+color: var(--bc-dark-cyan);
+}
+
+
+.title{
+
+    color: var(--bc-gray);
+    font-family: var(--ff--big);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+}
+
+.description{
+
+    color: var(--c-transparent-white);
+    font-family: var(--ff--lexend);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+
+.button{
+
+    background-color: var(--bc-gray);
+    border-radius: 2rem;
+    text-align: center;
+    font-family: var(--ff--lexend);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    width: 148px;
+    height: 48px;
+
+}
+
+.button:hover{
+
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--bc-gray);
+    color: var(--bc-gray);
+
+}
+
+@media (min-width:700px){
+
+    .container{
+
+        display: flex;
+        flex-direction: row;
+        border-radius: 1rem;
+        overflow: hidden;
+        max-width:1000px;
+        
+        }
+
+        .button{
+
+            margin-top: 5rem;
+
+        }
+
+}
